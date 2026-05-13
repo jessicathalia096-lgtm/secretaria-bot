@@ -20,7 +20,7 @@ from aiogram.types import (
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID =  8672397104
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 db = sqlite3.connect("grouphelp.db")
