@@ -1,3 +1,4 @@
+import os
 import asyncio
 import sqlite3
 from datetime import datetime, timedelta, timezone
@@ -16,7 +17,7 @@ from aiogram.types import (
     BotCommand
 )
 
-TOKEN =  "8673720684:AAEgHLYNq1S4vl81XW6VWcPcIxWhOVXY5xI"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID =  8672397104
 
 bot = Bot(token=TOKEN)
